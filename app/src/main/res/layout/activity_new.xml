@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <TextView
+        android:id="@+id/tv_temperature_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="温度:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_temperature"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_humidity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_temperature_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="湿度:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_temperature"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_humidity"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_co2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_humidity_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="二氧化碳(CO2):"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_humidity"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_co2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_ch2o_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_co2_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="甲醛(HCHO):"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_ch2o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_co2"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_ch20"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv_tvoc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ch2o_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="TVOC:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_tvoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ch2o"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_tvoc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_pm2.5_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tvoc_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="PM2.5:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_pm2.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tvoc"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_pm2.5"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_pm10_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pm2.5_name"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="PM10:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_pm10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pm2.5"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/now_pm10"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_last_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:text="@string/last_time"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="等待数据采集中...."
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

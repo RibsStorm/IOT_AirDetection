@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string name="now_temperature">%s ℃</string>
+    <string name="now_humidity">%s %%</string>
+    <string name="now_co2">%s ppm</string>
+    <string name="now_ch20">%s ug/m^3</string>
+    <string name="now_tvoc">%s ug/m^3</string>
+    <string name="now_pm2.5">%s ug/m^3</string>
+    <string name="now_pm10">%s ug/m^3</string>
+    <string name="last_time">最后一次更新时间: %s</string>
+</resources>
